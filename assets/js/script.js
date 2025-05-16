@@ -179,3 +179,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+// document.querySelectorAll('.skill-icon-box').forEach(box => {
+//   box.addEventListener('click', () => {
+//     const img = box.querySelector('img');
+//     const skillName = img.alt;
+//
+//     alert(`Skill: ${skillName}`);
+//   });
+// });
