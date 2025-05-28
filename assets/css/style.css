@@ -78,6 +78,7 @@
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
+  --gray: hsl(0, 0%, 60%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -1048,14 +1049,27 @@ main {
 }
 
 .project-category {
-  color: var(--light-gray-70);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  margin: 0;
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  line-height: 1.5;
+  margin-bottom: 2px;
 }
 
-
-
-
+.project-category2 {
+  margin: 0;
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  line-height: 1.5;
+  margin-bottom: 2px;
+}
+.project-tech {
+  font-size: var(--fs-6);
+  color: var(--white-1);
+  margin-top: 4px;
+  line-height: 1.5;
+  font-style: italic;
+}
 
 /*-----------------------------------*\
   #BLOG
