@@ -46,7 +46,8 @@
 }
 
 .skill-list {
-    background: var(--bg-gradient-onyx);
+    background: var(--bg-gradient-skill-expand);
+    border-radius: 20px 20px 0 0;
     padding-left: 20px;
     margin-top: 10px;
 }
@@ -105,9 +106,22 @@
     position: relative;
     cursor: pointer;
 }
+.skill-icon-box2 {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-yellow-soft);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
 
 /* Tooltip on hover */
-.skill-icon-box::after {
+.skill-icon-box::after,
+.skill-icon-box2::after {
     content: attr(aria-label);
     position: absolute;
     bottom: -35px;
@@ -125,7 +139,8 @@
     z-index: 10;
 }
 
-.skill-icon-box:hover::after {
+.skill-icon-box:hover::after,
+.skill-icon-box2:hover::after {
     opacity: 1;
 }
 
@@ -295,11 +310,9 @@
 /* =====Download cv ===== */
 
 .download-btn-cv {
-    display: inline-block;
     text-decoration: underline;
-    color: inherit;
+    color: darkgoldenrod;
     padding: 10px 20px;
-
     border-radius: 1px;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -307,9 +320,9 @@
 }
 
 .download-btn-cv:hover {
-    background-color: #0056b3;
+    background: var(--white-2);
+   // transform: scale(1.03);
 }
-
 
 /* ===== Responsive Adjustments ===== */
 

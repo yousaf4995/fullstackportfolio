@@ -79,20 +79,17 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
+  filterItems.forEach(item => {
+    const categories = item.dataset.category.split(',').map(cat => cat.trim().toLowerCase());
 
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+    if (selectedValue === "all" || categories.includes(selectedValue.toLowerCase())) {
+      item.classList.add("active");
     } else {
-      filterItems[i].classList.remove("active");
+      item.classList.remove("active");
     }
+  });
+};
 
-  }
-
-}
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -163,7 +160,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 document.addEventListener('DOMContentLoaded', function() {
   // Skill category toggle functionality
   const skillCategories = document.querySelectorAll('[data-skill-category]');
-
+  if (skillCategories.length > 0) {
+    skillCategories[0].classList.add('active');
+  }
   skillCategories.forEach(category => {
     category.addEventListener('click', function() {
       this.classList.toggle('active');
