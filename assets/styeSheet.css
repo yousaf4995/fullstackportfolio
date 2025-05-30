@@ -153,6 +153,7 @@
     padding: 0;
     margin: 0;
 }
+
 .skill-icon-box2 img {
     width: 40px;
     height: 40px;
@@ -161,6 +162,7 @@
     padding: 0;
     margin: 0;
 }
+
 .skill-name {
     text-align: center;
     font-weight: var(--fw-500);
@@ -168,6 +170,7 @@
     font-size: var(--fs-7);
     margin: 0;
 }
+
 /* ===== Project Cards ===== */
 .project-card {
     display: flex;
@@ -202,7 +205,6 @@
 .project-card:hover .project-img img {
     transform: scale(1.08);
 }
-
 
 
 .project-content {
@@ -310,7 +312,6 @@
 }
 
 
-
 /* =====Download cv ===== */
 
 .download-btn-cv {
@@ -325,7 +326,7 @@
 
 .download-btn-cv:hover {
     background: var(--white-2);
-   // transform: scale(1.03);
+/ / transform: scale(1.03);
 }
 
 /* ===== Responsive Adjustments ===== */
